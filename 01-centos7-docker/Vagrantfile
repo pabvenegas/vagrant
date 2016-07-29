@@ -73,6 +73,7 @@ Vagrant.configure("2") do |config|
   # SHELL
 
   config.vm.provision :shell, path: "bootstrap.sh"
+  config.vm.provision :shell, path: "install-dockercompose.sh"
 
   config.vm.network "private_network", type: "dhcp"
 end

@@ -30,6 +30,7 @@ vagrant status
 
 vagrant init centos/7
 vagrant up
+vagrant up --provision
 vagrant ssh (password vagrant)
 vagrant destroy
 ```
