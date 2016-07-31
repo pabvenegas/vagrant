@@ -4,7 +4,11 @@
   * ~/.vagrant.d/boxes
 - Host folder shared 
   * folder /vagrant shares with host
-  
+
+## Tutorials
+- Learning Ansible with Vagrant (PDF files)
+- https://sysadmincasts.com/episodes/
+
 ## Boxes
 ```
 # list
@@ -29,9 +33,13 @@ uname -a
 vagrant status
 
 vagrant init centos/7
+
 vagrant up
 vagrant up --provision
+
 vagrant ssh (password vagrant)
+vagrant ssh-config
+
 vagrant destroy
 ```
 
