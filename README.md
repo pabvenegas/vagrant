@@ -47,7 +47,8 @@ vagrant destroy
 
 Error: default: Warning: Authentication failure. Retrying...
 - https://github.com/mitchellh/vagrant/issues/7610
-- For anybody else who could benefit, the location to manually patch on Mac is 
+  - For anybody else who could benefit, the location to manually patch on Mac is 
 /opt/vagrant/embedded/gems/gems/vagrant-1.8.5/plugins/guests/linux/cap/public_key.rb.
 - Apply fix https://github.com/mitchellh/vagrant/pull/7611/commits/a6760dd8e7743e048cb2f38c474e05889356e8ac
-
+  - Add new line at line 57
+  - chmod 0600 ~/.ssh/authorized_keys
